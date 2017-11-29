@@ -57,3 +57,4 @@ HistGram<-function(data,breaks,X_min_lim,X_max_lim,Y_min_lim,X_max_lim){
 hist.default(data,breaks,xlim = c(X_min_lim,X_max_lim),ylim = c(Y_min_lim,Y_max_lim))
 }
 
+Kalpesh
