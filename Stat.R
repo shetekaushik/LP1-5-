@@ -13,3 +13,14 @@ get_mode<-function(data){
   uniq[which.max(tabulate(match(data,uniq)))]
 }
 
+z_score<-function(data,user){
+  (user-min(data))/sd(data)
+}
+
+min_max<-function(data,user,new_min,new_max){
+  ((user-min(data))/(max(data)-min(data)))*(new_max-new_min)+new_min
+}
+
+decimal<-function(user,scale1){
+  (user/scale1)
+}
